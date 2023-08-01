@@ -3,19 +3,11 @@ app: FocusWriter
 ingredients:
   dist: mantic
   sources:
-    - deb http://archive.ubuntu.com/ubuntu/ focal main universe
-
- # ppas:
-  #  - ppa:gottcode/gcppa
-
-  script:
-    - sudo add-apt-repository ppa:gottcode/gcppa
-    - sudo apt update
-
-    - apt list --all-versions focuswriter
-    - sudo apt install focuswriter
-    - exit
-    - sudo apt install focuswriter
+    #- deb http://archive.ubuntu.com/ubuntu/ focal main universe
+    - deb https://ppa.launchpadcontent.net/gottcode/gcppa/ubuntu mantic main 
+    - deb-src https://ppa.launchpadcontent.net/gottcode/gcppa/ubuntu mantic main 
+  #ppas:
+   # - ppa:gottcode/gcppa
 
 script:
   - set -x
