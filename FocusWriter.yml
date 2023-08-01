@@ -3,17 +3,18 @@ app: FocusWriter
 ingredients:
   script:
   #package: focuswriter-1.8.5
-  #dist: focal
+  #
 
     - wget https://download.opensuse.org/repositories/home:/gottcode/xUbuntu_22.04/amd64/focuswriter_1.8.5-0+1.1_amd64.deb
     - pwd; ls -lah
     - sudo apt install ./focuswriter_1.8.5-0+1.1_amd64.deb
 
-  #sources:
-  #  - deb http://archive.ubuntu.com/ubuntu/ focal main universe
+  dist: focal
+  sources:
+    - deb http://archive.ubuntu.com/ubuntu/ focal main universe
 
-  #ppas:
-  #  - ppa:gottcode/gcppa
+  ppas:
+    - ppa:gottcode/gcppa
 
 script:
   - set -x
