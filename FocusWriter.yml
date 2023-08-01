@@ -11,7 +11,8 @@ ingredients:
   script:
     - sudo add-apt-repository ppa:gottcode/gcppa
     - sudo apt update
-    - apt list --all-versions package_name
+    - apt list --all-versions focuswriter
+    - sudo apt install focuswriter-1.8.5
     - exit
     - sudo apt install focuswriter
 
