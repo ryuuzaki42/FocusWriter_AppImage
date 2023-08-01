@@ -8,7 +8,9 @@ ingredients:
     - ppa:gottcode/gcppa
 
 script:
-  - cp ./usr/share/icons/hicolor/scalable/apps/org.FocusWriter.FocusWriter.svg .
+  #- cp ./usr/share/icons/hicolor/scalable/apps/org.FocusWriter.FocusWriter.svg .
+  - find . | grep "png"
+  - find . | grep "svg"
   - pwd
   - ls -lah
   - ls -lah ../
