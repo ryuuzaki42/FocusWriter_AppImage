@@ -1,16 +1,18 @@
 app: FocusWriter
 
 ingredients:
-  #dist: focal
-  #sources:
-  #  - deb http://archive.ubuntu.com/ubuntu/ focal main universe
+  dist: focal
+  sources:
+    - deb http://archive.ubuntu.com/ubuntu/ focal main universe
+
   ppas:
     - ppa:gottcode/gcppa
 
-  script:  
+  script:
+    - sudo add-apt-repository ppa:gottcode/gcppa
     - sudo apt update
+    - sudo apt install focuswriter
 
 script:
   - set -x
   - cp ../../README.md .
-  
