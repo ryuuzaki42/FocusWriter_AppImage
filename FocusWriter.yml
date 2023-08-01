@@ -1,10 +1,10 @@
-app: focuswriter_1.8.5
+app: focuswriter
 
 ingredients:
-  dist: focal
-  
+  dist: universe
+
   sources:
-    - deb http://archive.ubuntu.com/ubuntu/ focal main universe
+    - deb http://archive.ubuntu.com/ubuntu/ universe focal main
 
   #ppas:
   #  - ppa:gottcode/gcppa
