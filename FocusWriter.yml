@@ -3,9 +3,7 @@ app: focuswriter
 ingredients:
   dist: focal
   sources:
-    - deb http://archive.ubuntu.com/ubuntu/ focal main universe
-  #ppas:
-  #  - ppa:gottcode/gcppa
+    - deb http://archive.ubuntu.com/ubuntu/ universe focal main
 
 script:
   - set -x
