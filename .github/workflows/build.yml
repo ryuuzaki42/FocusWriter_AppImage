@@ -4,7 +4,11 @@ on: [push]
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners
+    # runs-on: ubuntu-latest # Not working with  ubuntu-latest /  ubuntu-22.04
+    # Error: /lib/x86_64-linux-gnu/libgio-2.0.so.0: undefined symbol: g_module_open_full
+    runs-on: ubuntu-20.04
+
     steps:
     - uses: actions/checkout@master
 
