@@ -1,12 +1,11 @@
-app: FocusWriter
+app: focuswriter
 
 ingredients:
   dist: focal
   sources:
-    - deb https://ppa.launchpadcontent.net/gottcode/gcppa/ubuntu kinetic main focal
     - deb http://archive.ubuntu.com/ubuntu/ focal main universe
-  ppas:
-    - ppa:gottcode/gcppa
+  #ppas:
+  #  - ppa:gottcode/gcppa
 
 script:
   - set -x
