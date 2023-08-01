@@ -1,11 +1,11 @@
-app: FocusWriter
+app: focuswriter_1.8.5
 
 ingredients:
   dist: focal
   
   sources:
     - deb http://archive.ubuntu.com/ubuntu/ focal main universe
-    #- deb http://download.opensuse.org/repositories/home:/gottcode/
+
   #ppas:
   #  - ppa:gottcode/gcppa
 
@@ -14,10 +14,5 @@ script:
 
   - apt-cache showpkg FocusWriter 
   - apt-cache showpkg focuswriter
-
-  - wget https://download.opensuse.org/repositories/home:/gottcode/xUbuntu_22.04/amd64/focuswriter_1.8.5-0+1.1_amd64.deb
-  - pwd; ls -lah
-  - sudo apt install focuswriter_1.8.5-0+1.1_amd64.deb
-  - sudo dpkg -i focuswriter_1.8.5-0+1.1_amd64.deb
 
   - cp ../../README.md .
