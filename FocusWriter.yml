@@ -1,0 +1,16 @@
+app: FocusWriter
+
+ingredients:
+  dist: focal
+  sources:
+    - deb http://archive.ubuntu.com/ubuntu/ focal main universe
+  ppas:
+    - ppa:gottcode/gcppa
+
+script:
+  - cp ./usr/share/icons/hicolor/scalable/apps/org.FocusWriter.FocusWriter.svg .
+  - pwd
+  - ls -lah
+  - ls -lah ../
+  - ls -lah ../../
+  - cp ../../README.md .
