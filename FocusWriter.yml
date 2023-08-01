@@ -2,19 +2,16 @@ app: FocusWriter
 
 ingredients:
   #dist: focal
-  dist: xUbuntu_22.04
-  sources:
+  #dist: xUbuntu_22.04
+  #sources:
     #- deb http://archive.ubuntu.com/ubuntu/ focal main universe
     - deb http://download.opensuse.org/repositories/home:/gottcode/
   #ppas:
   #  - ppa:gottcode/gcppa
 
 script:
-  #- cp ./usr/share/icons/hicolor/scalable/apps/org.FocusWriter.FocusWriter.svg .
-  #- find . | grep "png"
-  #- find . | grep "svg"
-  #- pwd
-  #- ls -lah
-  #- ls -lah ../
-  #- ls -lah ../../
+  - echo 'deb http://download.opensuse.org/repositories/home:/gottcode/xUbuntu_22.04/ /' | sudo tee /etc/apt/sources.list.d/home:gottcode.list
+  - curl -fsSL https://download.opensuse.org/repositories/home:gottcode/xUbuntu_22.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_gottcode.gpg > /dev/null
+  - sudo apt update
+  - sudo apt install focuswriter
   - cp ../../README.md .
