@@ -1,18 +1,15 @@
-app: focuswriter
+app: FocusWriter
 
 ingredients:
+  package: focuswriter
   dist: universe
 
   sources:
     - deb http://archive.ubuntu.com/ubuntu/ universe focal main
 
-  #ppas:
-  #  - ppa:gottcode/gcppa
+  ppas:
+    - ppa:gottcode/gcppa
 
 script:
   - set -x
-
-  - apt-cache showpkg FocusWriter 
-  - apt-cache showpkg focuswriter
-
   - cp ../../README.md .
