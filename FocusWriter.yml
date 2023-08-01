@@ -1,7 +1,7 @@
 app: FocusWriter
 
 ingredients:
-  dist: kinetic
+  dist: focal
   sources:
     - deb https://ppa.launchpadcontent.net/gottcode/gcppa/ubuntu kinetic main 
     - deb-src https://ppa.launchpadcontent.net/gottcode/gcppa/ubuntu kinetic main 
