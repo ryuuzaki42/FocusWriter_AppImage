@@ -5,14 +5,15 @@ ingredients:
   #sources:
   #  - deb http://archive.ubuntu.com/ubuntu/ focal main universe
 
-  ppas:
-    - ppa:gottcode/gcppa
+ # ppas:
+#    - ppa:gottcode/gcppa
 
   script:
     - sudo add-apt-repository ppa:gottcode/gcppa
     - sudo apt update
+
     - apt list --all-versions focuswriter
-    - sudo apt install focuswriter-1.8.5
+    - sudo apt install focuswriter
     - exit
     - sudo apt install focuswriter
 
