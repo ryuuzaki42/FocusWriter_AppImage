@@ -3,8 +3,7 @@ app: focuswriter
 ingredients:
   dist: focal
   sources:
-    - deb http://archive.ubuntu.com/ubuntu/ universe focal main
+    - deb http://archive.ubuntu.com/ubuntu/ focal main universe
 
 script:
-  - set -x
   - cp ../../README.md .
