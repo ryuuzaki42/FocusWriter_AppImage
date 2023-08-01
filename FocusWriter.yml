@@ -1,10 +1,10 @@
 app: FocusWriter
 
 ingredients:
-  dist: mantic
+  dist: kinetic
   sources:
-    - deb https://ppa.launchpadcontent.net/gottcode/gcppa/ubuntu mantic main 
-    - deb-src https://ppa.launchpadcontent.net/gottcode/gcppa/ubuntu mantic main 
+    - deb https://ppa.launchpadcontent.net/gottcode/gcppa/ubuntu kinetic main 
+    - deb-src https://ppa.launchpadcontent.net/gottcode/gcppa/ubuntu kinetic main 
 
     - deb http://archive.ubuntu.com/ubuntu/ focal main universe
   #ppas:
