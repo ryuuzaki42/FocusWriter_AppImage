@@ -1,12 +1,12 @@
 app: FocusWriter
 
 ingredients:
-  dist: trusty
-  sources:
-    - deb http://archive.ubuntu.com/ubuntu/ focal main universe
+  #dist: focal
+  #sources:
+  #  - deb http://archive.ubuntu.com/ubuntu/ focal main universe
 
-  #ppas:
-  #  - ppa:gottcode/gcppa
+  ppas:
+    - ppa:gottcode/gcppa
 
   script:
     - sudo add-apt-repository ppa:gottcode/gcppa
