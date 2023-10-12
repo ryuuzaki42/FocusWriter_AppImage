@@ -1,5 +1,11 @@
 name: Create new realease
-on: [push]
+
+on:
+  push:
+    branches:
+      - "**"
+    tags:
+      - "!**"
 
 jobs:
   build:
@@ -18,14 +24,14 @@ jobs:
     - name: Get pkg2appimage
       run: |
         set -x
-        wget https://github.com/AppImageCommunity/pkg2appimage/releases/download/continuous/pkg2appimage-1807-x86_64.AppImage
-        chmod +x pkg2appimage-1807-x86_64.AppImage
+        wget https://github.com/AppImageCommunity/pkg2appimage/releases/download/continuous/pkg2appimage--x86_64.AppImage
+        chmod +x pkg2appimage--x86_64.AppImage
         ls -lah
 
     - name: Make AppImage
       run:  |
         set -x
-        ./pkg2appimage-1807-x86_64.AppImage FocusWriter.yml
+        ./pkg2appimage--x86_64.AppImage FocusWriter.yml
 
     - name: List files and rename AppImage
       run: |
