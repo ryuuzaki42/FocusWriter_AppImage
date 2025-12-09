@@ -1,5 +1,5 @@
 name: Create new realease
-# Update test 01
+# Update test
 on:
   push:
     branches:
