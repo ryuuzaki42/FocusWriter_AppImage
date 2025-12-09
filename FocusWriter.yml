@@ -1,9 +1,9 @@
 app: focuswriter
 
 ingredients:
-  dist: focal
+  dist: jammy
   sources:
-    - deb http://archive.ubuntu.com/ubuntu/ focal main universe
+    - deb http://archive.ubuntu.com/ubuntu/ jammy main universe
 
 script:
   - cp ../../README.md .
